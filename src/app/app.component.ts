@@ -18,20 +18,20 @@ export class AppComponent {
     ];
   }
 
-  add(tileKind: string): void {
+  add(widgetName: string): void {
     const data = this.getData();
-    const tile = document.createElement(tileKind);
-    tile.setAttribute('class', 'col');
-    tile.setAttribute('a', '' + data[0]);
-    tile.setAttribute('b', '' + data[1]);
-    tile.setAttribute('c', '' + data[2]);
+    const widget = document.createElement(widgetName);
+    widget.setAttribute('class', 'widget');
+    widget.setAttribute('a', '' + data[0]);
+    widget.setAttribute('b', '' + data[1]);
+    widget.setAttribute('c', '' + data[2]);
 
     const content = document.getElementById('content');
-    content.appendChild(tile);
+    content.appendChild(widget);
   }
 
-  addExternal(): void {
+  addWidget(widgetName: string): void {
     this.externalService.load();
-    this.add('external-custom-element');
+    this.add(widgetName);
   }
 }
