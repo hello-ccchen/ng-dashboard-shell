@@ -7,7 +7,7 @@ import { ExternalWidgetService } from './external-widget.service';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-
+  show: boolean;
   constructor(private externalService: ExternalWidgetService) { }
 
   getData(): [number, number, number] {
