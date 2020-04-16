@@ -28,11 +28,8 @@
     width: 100%;
 }
 
-.box-opener {
-    display: flex;
-    flex-direction: row;
-    vertical-align: middle;
-    cursor: pointer;
+.menu > button {
+    margin-bottom: 5px;
 }
 
 .box {

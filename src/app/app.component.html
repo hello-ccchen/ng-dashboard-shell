@@ -7,28 +7,22 @@
 
 <div class="big-container" role="main">
   <div class="menu">
-    
-    <div class="box-opener" (click)="show = !show">
-      <svg id="i-edit" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="20" height="20" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-        <path d="M30 7 L25 2 5 22 3 29 10 27 Z M21 6 L26 11 Z M5 22 L10 27 Z" />
-      </svg>
-      Add Widget
-    </div>
+    <button class="btn btn-primary" (click)="show = !show">Add Widget</button>
     <div class="box" [class.opened]="show">
       <div class="widget-actions">
-        <div class="card text-center" style="width: 14rem; height: 150px; cursor: pointer;" (click)="addWidget('pie-chart')">
+        <div class="card border-primary text-center" style="width: 14rem; height: 150px; cursor: pointer;" (click)="addWidget('pie-chart')">
           <img class="card-img-top small-img" src="../assets/pie-chart.png">
           <div class="card-body">
             <p class="card-text">Pie Chart Widget</p>
           </div>
         </div>
-        <div class="card text-center" style="width: 14rem; height: 150px; cursor: pointer;" (click)="addWidget('bar-chart')">
+        <div class="card border-primary text-center" style="width: 14rem; height: 150px; cursor: pointer;" (click)="addWidget('bar-chart')">
           <img class="card-img-top small-img" src="../assets/bar-chart.png">
           <div class="card-body">
             <p class="card-text">Bar Chart Widget</p>
           </div>
         </div>
-        <div class="card text-center" style="width: 14rem; height: 150px; cursor: pointer;" (click)="addWidget('custom-table')">
+        <div class="card border-primary text-center" style="width: 14rem; height: 150px; cursor: pointer;" (click)="addWidget('custom-table')">
           <img class="card-img-top small-img" src="../assets/table.png">
           <div class="card-body">
             <p class="card-text">Table Widget</p>
